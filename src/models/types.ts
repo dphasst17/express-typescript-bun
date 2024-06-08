@@ -16,10 +16,11 @@ import type{
     idProduct: Generated<number>
     nameProduct: string
     imagesProduct:string,
-    id_Type:number
+    id_Type:number,
     price:number,
-
+    detail?:JSONColumnType<{}[] | [] >
   }
+
   export type Product = Selectable<ProductTable>
   export type NewProduct = Insertable<ProductTable>
   export type ProductUpdate = Updateable<ProductTable>
